@@ -4,4 +4,4 @@ Repositório dedicado ao Challenge para empresa Schneider usando tecnologias com
 
 ## Ferramentas
 
-- [Planejamento do Projeto](https://github.com/JosueTeo220/Challenge-Schneider)
+- [Planejamento do Projeto](https://miro.com/welcomeonboard/VnJrUUZDWHdzaG9nY2JFanNvblFYU1VKaFVhYzg2dzV1Vzc4cEJJWEJ1MThCekoyZzd3VXBJZUk3SjhRdFYwUXwzNDU4NzY0NTU0MDY2MDYzNDI5fDI=?share_link_id=889949530144)
