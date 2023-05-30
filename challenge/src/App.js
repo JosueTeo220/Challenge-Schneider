@@ -1,9 +1,10 @@
-import MenuBar from "./components/menuBar";
-function App() {
-  
+import React from 'react';
+import './style/index.css'
+import HomePage from './pages/HomePage';
+const App = () => {
   return (
-    <MenuBar/>
+    <HomePage/>
   );
-}
+};
 
 export default App;
