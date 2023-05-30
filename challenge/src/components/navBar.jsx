@@ -1,10 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import '../style/home.css'
 
 const NavBar = () => {
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div className="">
+      {
+      /* <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="./">
             Navbar
@@ -45,7 +47,9 @@ const NavBar = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */
+      }
+
     </div>
   );
 };
