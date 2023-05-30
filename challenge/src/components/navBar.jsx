@@ -4,7 +4,8 @@ import '../style/home.css'
 
 const NavBar = () => {
   return (
-    <div className="">
+    <div className="navbarStyle">
+      dadfad
       {
       /* <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
