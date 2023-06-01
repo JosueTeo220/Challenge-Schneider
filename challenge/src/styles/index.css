@@ -1,0 +1,14 @@
+/*
+  Global style Settings
+*/
+* {
+  margin: 0;
+  padding: 0;  
+}
+/* body {
+  background:radial-gradient(circle at 0% 100%, #c7fbde 0%, #ffff 75%, #b0cdc1 100%);  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  height: 100vh;
+} */
