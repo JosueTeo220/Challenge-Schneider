@@ -1,0 +1,62 @@
+.MenuContainer {
+  width: 100%;
+  padding: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 80px;
+  position: fixed;
+  justify-content: center;
+  background-color: #333;
+  display: flex;
+  z-index: 1;
+}
+.listMenu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+.menuLink {
+  margin-left: 2rem;
+}
+.menuLink a {
+  color: #fff;
+  font-size: large;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Work Sans", "Helvetica Neue", Helvetica, Helvetica, Arial,
+    sans-serif;
+}
+.menuLink a:hover {
+  color: #09174f;
+  transition: color 0.3s;
+}
+.menuLinkBorder {
+  position: relative;
+}
+
+.menuLinkBorder::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: width 0.3s;
+}
+
+.menuLinkBorder:hover::after {
+  width: 100%;
+}
+@media screen and (max-width: 765px)  {
+  .MenuContainer {
+    padding: 2rem;
+    justify-content: right;
+    padding-left: 20px;
+    margin: 0;
+    background-color: #333;
+    display: flex;
+  }
+}

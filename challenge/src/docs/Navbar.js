@@ -21,25 +21,23 @@ const Navbar = () => {
   }, [scrolled]);
 
   return (
-    <>
+    <div className='navBarContainer'>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-        <Link to="/" className="navbrand">Logo</Link>
+        <Link to="/" className="navbrand">SBook</Link>
         <ul className="navlinks">
           <li className="navlink">
-            <Link to="/dicas-sustentaveis">Dicas Sustentáveis</Link>
+            <Link to="/dicas-sustentaveis">Dicas</Link>
           </li>
           <li className="navlink">
             <Link to="/noticias-esg">Notícias ESG</Link>
-          </li>
-          <li className="navlink">
-            <Link to="/fale-conosco">Fale Conosco</Link>
           </li>
           <li className="navlink">
             <Link to="/sobre-nos">Sobre Nós</Link>
           </li>
         </ul>
       </nav>
-    </>
+    </div>
+      
   );
 };
 

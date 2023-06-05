@@ -1,26 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+.navBarContainer{
+  justify-content: center;
+  display: flex;
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  align-items: center; /* Adicionado para centralizar verticalmente */
+  z-index: 1;
+  transition: background-color 0.3s;
+}
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: #333;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
-    transition: background-color 0.3s;
-  }
-  
+  border: 1px solid red;
+}
 
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.90);
+  background-color: rgba(0, 0, 0, 0.697);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 .navbrand {
+  font-weight: 700;
   color: #fff;
   font-size: 1.5rem;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.6s;
 }
 
 .navbrand:hover {
@@ -30,24 +40,28 @@
 .navlinks {
   display: flex;
   align-items: center;
+  justify-content: center; /* Adicionado para centralizar os links */
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+
 .navlink {
+  padding-right: 2rem;
   margin-left: 1rem;
   position: relative;
 }
 
 .navlink a {
-  color: #fff;
+  font-family: 'Roboto', sans-serif;  
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .navlink a:hover {
-  color: #ff6b6b;
+  color: #34fd02;
 }
 
 .navlink::before {
@@ -71,32 +85,5 @@
 .content {
   padding: 4rem 1rem 1rem;
   margin-top: 1rem;
-  transition: margin-top 0.3s;
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 2rem;
-    display: none;
-  }
-
-  .navbar.scrolled {
-    background-color: #333;
-  }
-
-  .navlinks {
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-
-  .navlink {
-    margin-left: 0;
-    margin-bottom: 0.5rem;
-  }
-
-  .content {
-    margin-top: 8rem;
-  }
+  transition: margin-top 0.8s;
 }
