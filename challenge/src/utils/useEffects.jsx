@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
-function scrolled_animation ()  {
-    useEffect(() => {
-        const handleScroll = () => {
-          const isScrolled = window.scrollY > 0;
-          if (isScrolled !== scrolled) {
-            setScrolled(isScrolled);
-          }
-        };
+// import { useEffect, useState } from "react";
+// function scrolled_animation ()  {
+//     useEffect(() => {
+//         const handleScroll = () => {
+//           const isScrolled = window.scrollY > 0;
+//           if (isScrolled !== scrolled) {
+//             setScrolled(isScrolled);
+//           }
+//         };
     
-        window.addEventListener("scroll", handleScroll);
+//         window.addEventListener("scroll", handleScroll);
     
-        return () => {
-          window.removeEventListener("scroll", handleScroll);
-        };
-      }, [scrolled]);
-}
+//         return () => {
+//           window.removeEventListener("scroll", handleScroll);
+//         };
+//       }, [scrolled]);
+// }
     
 
-export default scrolledAnimation
+// export default scrolledAnimation
