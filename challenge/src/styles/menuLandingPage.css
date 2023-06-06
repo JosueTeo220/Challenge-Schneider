@@ -59,4 +59,7 @@
     background-color: #333;
     display: flex;
   }
+  img {
+    height: 25px;
+  }
 }

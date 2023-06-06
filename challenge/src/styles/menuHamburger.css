@@ -1,0 +1,9 @@
+.responsiveLinks {
+    width: 100%;
+    background-color: white;
+    height: 200px;
+    position: absolute;
+}
+a {
+    cursor: pointer;
+}

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../styles/menuLandingPage.css";
+import menuHamburgerIcon from "../assets/icons/menu-hamburguer.png"
+import MenuHamburger from "./menuHamburger";
+import { Link } from "react-router-dom";
 
 function MenuLandingPage() {
   const [showComponent, setShowComponent] = useState(true);
-  const [scrolled, setScrolled] = useState(false);
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -21,20 +24,7 @@ function MenuLandingPage() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrolled]);
+  
 
   return (
     <div className="MenuContainer">
@@ -42,22 +32,24 @@ function MenuLandingPage() {
         <nav>
           <ul className="listMenu">
           <li className="menuLink menuLinkBorder">
-            <a href="/">Inicio</a>
+            <Link>Inicio</Link>
           </li>
           <li className="menuLink menuLinkBorder">
-            <a href="/">Dicas Sustentáveis</a>
+            <Link>Dicas Sustentáveis</Link>
           </li>
           <li className="menuLink menuLinkBorder">
-            <a href="/">Gameficação</a>
+            <Link>Gameficação</Link>
           </li>
           <li className="menuLink menuLinkBorder">
-            <a href="/">Sobre o Projeto</a>
+            <Link>Sobre o Projeto</Link>
           </li>
         </ul>
         </nav>
       ) : (
         <div>
-          <p>Menu Hamburger</p>
+          <MenuHamburger>
+            <img src={menuHamburgerIcon} alt="Icone menu"/>
+          </MenuHamburger>
         </div>
       )}
     </div>
