@@ -9,16 +9,16 @@ const MenuHamburger = ({ children }) => {
     <div>
       {menuClick ? (
         <div>
-          <a href="#" onClick={openCloseMenu}>
+          <button onClick={openCloseMenu}>
             {children}
-          </a>
+          </button>
           <p>Outro local</p>
         </div>
       ) : (
         <div>
-          <a href="#" onClick={openCloseMenu}>
+          <button onClick={openCloseMenu}>
             {children}
-          </a>
+          </button>
         </div>
       )}
     </div>
