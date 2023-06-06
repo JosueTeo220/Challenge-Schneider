@@ -59,7 +59,8 @@
     background-color: #333;
     display: flex;
   }
-  img {
+
+  img{
     height: 25px;
   }
 }
