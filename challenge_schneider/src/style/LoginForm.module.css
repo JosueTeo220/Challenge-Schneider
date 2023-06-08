@@ -1,0 +1,31 @@
+.loginForm{
+    margin-left: 10px;
+}
+
+.loginForm label, button{
+    font-weight: bold;
+}
+
+.submitButton{
+    text-align: center;
+}
+
+.submitButton label{
+    color: rgb(233, 10, 10);
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.submitButton button{
+    margin-top: 10px;
+    padding: 15px 25px;
+}
+
+.submitButton button:hover{
+    background-color: #aaa;
+}
+
+.loginForm input{
+    width: 90%;
+    margin-left: 50px;
+}
