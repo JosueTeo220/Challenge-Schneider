@@ -1,39 +1,52 @@
-.submitButton{
-    text-align: center;
+.submitButton {
+  text-align: center;
 }
 
-.loginForm input{
-    border-radius: 0;
-    border: 0;
-    outline: 0;
-    margin-top: 20px;
-    border-bottom: 2px solid #000;
+.loginForm input {
+  border-radius: 0;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #000;
 }
-.submitButton button{
-    margin-top: 20px;
-    border: 1px solid #15a85a;
-    border-radius: 10px;
-    background-color: #1FE079;
-    color: #fff;
-    padding: 10px 43%;
+.passwordInput {
+  margin-top: 20px;
 }
-
-.submitButton button:hover{
-    background-color: #15a85a;
+.submitButton button {
+  margin-top: 20px;
+  border: 1px solid #15a85a;
+  border-radius: 10px;
+  background-color: #1fe079;
+  color: #fff;
+  padding: 10px 43%;
 }
 
-.submitButton label{
-    color: rgb(233, 10, 10);
-    font-weight: bold;
-    margin-left: 50px;
+.submitButton button:hover {
+  background-color: #15a85a;
 }
-@media screen and (max-width: 900px){
-    .submitButton button{
-        padding: 10px 41%;
-    }
+
+.submitButton label {
+  color: rgb(233, 10, 10);
+  font-weight: bold;
+  margin-left: 50px;
 }
-@media screen and (max-width: 765px){
-    .submitButton button{
-        padding: 10px 45%;
-    }
+.form_container {
+  padding-right: 100px;
+}
+.IconPersonForm {
+  position: "absolute";
+  right: 60;
+}
+@media screen and (max-width: 900px) {
+ 
+  .submitButton button {
+    padding: 10px 41%;
+  }
+}
+@media screen and (max-width: 765px) {
+    .form_container {
+        padding: 20px;
+      }
+  .submitButton button {
+    padding: 10px 45%;
+  }
 }
