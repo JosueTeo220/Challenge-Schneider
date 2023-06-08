@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../../style/LoginForm.module.css";
+import styles from "./LoginForm.module.css";
 
 export default function LoginForm({ showLabel, verifyLogin }) {
   const [username, setUsername] = useState("");
@@ -23,7 +23,8 @@ export default function LoginForm({ showLabel, verifyLogin }) {
   };
 
   return (
-    <form className={styles.loginForm} onSubmit={handleSubmit}>
+    <div className="container-fluid">
+      <form className={styles.loginForm} onSubmit={handleSubmit}>
       <div className={styles.emailInput}>
         <label>E-mail:</label>
         <input
@@ -49,5 +50,6 @@ export default function LoginForm({ showLabel, verifyLogin }) {
         {showLabel && <label>E-mail/senha inválidos</label>}
       </div>
     </form>
+    </div>
   );
 }

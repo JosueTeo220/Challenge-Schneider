@@ -1,7 +1,14 @@
-import LoginForm from "../components/LoginPageComponents/LoginForm";
+import LoginContainer from "../components/LoginPageComponents/LoginContainer";
 
 export default function LoginPage({ showLabel, verifyLogin}){
+    const style = {
+        height: '100vh',
+        width: '100vw'
+    }
     return (
-        <LoginForm showLabel={showLabel} verifyLogin={verifyLogin} />
+        <div style={style} className="">
+            <LoginContainer showLabel={showLabel} verifyLogin={verifyLogin}  />
+        </div>
+        
     )
 }

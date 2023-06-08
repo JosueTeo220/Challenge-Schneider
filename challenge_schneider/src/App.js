@@ -22,10 +22,8 @@ function App() {
     });
     if (!login) {
       setShowLabel(true);
-      localStorage.setItem(login, JSON.stringify(login))
       setTimeout(() => {
         setShowLabel(false);
-        localStorage.setItem(login, JSON.stringify(login))
       }, 5000);
     }
   }
@@ -48,7 +46,8 @@ function App() {
           </Routes>
         ) : (
         <Routes>
-          <Route path="/" element={<LoginPage showLabel={showLabel} verifyLogin={verifyLogin} />}></Route>
+          <Route path="/" element={<LoginPage showLabel={showLabel} verifyLogin={verifyLogin}/>}></Route>
+          <Route path="/*" element={<LoginPage showLabel={showLabel} verifyLogin={verifyLogin}/>}></Route>
         </Routes>
         )}
       </Router>

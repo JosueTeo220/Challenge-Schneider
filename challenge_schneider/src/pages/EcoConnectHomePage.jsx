@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import LogoutButton from '../components/LoginPageComponents/LogoutButton'
+import LogoutButton from '../components/LoginPageComponents/FormInput/LogoutButton'
 
 function EcoConnectHomePage({user, verifyLogout}){
     return(

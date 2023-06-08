@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import profile from "../../assets/icons/profile-icon.png";
+import profile from "../../../assets/icons/profile-icon.png";
 
 export default function LogoutButton({ verifyLogout }) {
   return (
