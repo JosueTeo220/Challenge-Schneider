@@ -1,0 +1,29 @@
+.sideBarContainer{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 150px;
+    background-color: #1FE079;
+}
+
+.sideBarContainer li{
+    list-style: none;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sideBarContainer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.sideBarContainer a:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+
+
