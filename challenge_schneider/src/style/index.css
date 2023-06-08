@@ -13,3 +13,21 @@ font-family: 'Source Code Pro', monospace;
     margin: 0;
     padding: 0;
 }
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a5fcc9; /* Cor da barra de rolagem */
+  border-radius: 4px; /* Bordas arredondadas da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Cor da barra de rolagem ao passar o mouse */
+}
+
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Cor do thumb do scroll ao passar o mouse */
+}

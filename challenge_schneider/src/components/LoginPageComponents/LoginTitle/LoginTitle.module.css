@@ -1,18 +1,35 @@
-.title{
+.title {
     font-weight: 400;
     color: #000;
     font-family: 'Inter';
     font-size: 32px;
     line-height: 39px;
     text-align: center;
-}
-
-.title span{
-    color: #1FE079;
+  }
+  
+  .title span {
+    color: #1fe079;
     font-weight: bold;
-}
-@media screen and (max-width:1000){
-    .title{
-        font-size: 20px;
+  }
+  
+  .fadeIn {
+    animation: fadeInAnimation 2s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
     }
-}
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .title {
+      font-size: px;
+    }
+  }
+  

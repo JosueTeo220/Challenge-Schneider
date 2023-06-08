@@ -9,11 +9,12 @@ export default function LoginPage({ showLabel, verifyLogin}){
         top: '50%',
         left: '50%',
         transform: "translate(-50%, -50%)",
-        width: '65%',
+        width: '100%',
+        padding: '40px'
     }
     return (
-        <div style={appStyle} className="">
-            <div style={style} className="">
+        <div style={appStyle}>
+            <div style={style}>
                 <LoginContainer showLabel={showLabel} verifyLogin={verifyLogin}  />
             </div>
         </div>
