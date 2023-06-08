@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./LoginForm.module.css";
+import personIcon from '../../../assets/icons/person.svg'
 
 export default function LoginForm({ showLabel, verifyLogin }) {
   const [username, setUsername] = useState("");
@@ -26,27 +27,27 @@ export default function LoginForm({ showLabel, verifyLogin }) {
     <div className="container-fluid">
       <form className={styles.loginForm} onSubmit={handleSubmit}>
       <div className={styles.emailInput}>
-        <label>E-mail:</label>
         <input
           type="email"
           className="form-control"
           value={username}
           onChange={handleUsernameChange}
           autoComplete="username"
+          placeholder="Usuário"
         />
       </div>
       <div className={styles.passwordInput}>
-        <label>Senha:</label>
         <input
           type="password"
           className="form-control"
           value={password}
           onChange={handlePasswordChange}
           autoComplete="current-password"
+          placeholder="Senha"
         />
       </div>
       <div className={styles.submitButton}>
-        <button type="submit">Login</button>
+        <button type="submit">Iniciar</button>
         {showLabel && <label>E-mail/senha inválidos</label>}
       </div>
     </form>

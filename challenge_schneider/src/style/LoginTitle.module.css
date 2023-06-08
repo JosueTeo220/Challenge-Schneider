@@ -1,0 +1,12 @@
+.title{
+    font-weight: 400;
+    color: #000;
+    font-family: 'Inter';
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.title span{
+    color: #1FE079;
+    font-weight: 700;
+}

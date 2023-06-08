@@ -1,30 +1,29 @@
-.loginForm{
-    margin-left: 10px;
-}
-
-.loginForm label, button{
-    font-weight: bold;
-}
-
 .submitButton{
     text-align: center;
+}
+
+.loginForm input{
+    border-radius: 0;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #000;
+}
+
+.submitButton button{
+    margin-top: 20px;
+    border: 1px solid #15a85a;
+    border-radius: 10px;
+    background-color: #1FE079;
+    padding: 3% 35%;
+    color: #fff;
+}
+
+.submitButton button:hover{
+    background-color: #15a85a;
 }
 
 .submitButton label{
     color: rgb(233, 10, 10);
     font-weight: bold;
-    margin-left: 50px;
-}
-
-.submitButton button{
-    margin-top: 10px;
-    padding: 15px 25px;
-}
-
-.submitButton button:hover{
-    background-color: #aaa;
-}
-
-.loginForm input{
     margin-left: 50px;
 }
