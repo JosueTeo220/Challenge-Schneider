@@ -1,4 +1,4 @@
-import styles from '../../../style/LoginTitle.module.css'
+import styles from './LoginTitle.module.css'
 
 export default function LoginTitle(){
         return(

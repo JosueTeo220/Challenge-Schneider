@@ -4,9 +4,15 @@
     font-family: 'Inter';
     font-size: 32px;
     line-height: 39px;
+    text-align: center;
 }
 
 .title span{
     color: #1FE079;
-    font-weight: 700;
+    font-weight: bold;
+}
+@media screen and (max-width:1000){
+    .title{
+        font-size: 20px;
+    }
 }

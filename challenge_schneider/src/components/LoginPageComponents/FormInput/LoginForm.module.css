@@ -6,16 +6,16 @@
     border-radius: 0;
     border: 0;
     outline: 0;
+    margin-top: 20px;
     border-bottom: 2px solid #000;
 }
-
 .submitButton button{
     margin-top: 20px;
     border: 1px solid #15a85a;
     border-radius: 10px;
     background-color: #1FE079;
-    padding: 3% 35%;
     color: #fff;
+    padding: 10px 43%;
 }
 
 .submitButton button:hover{
@@ -26,4 +26,14 @@
     color: rgb(233, 10, 10);
     font-weight: bold;
     margin-left: 50px;
+}
+@media screen and (max-width: 900px){
+    .submitButton button{
+        padding: 10px 41%;
+    }
+}
+@media screen and (max-width: 765px){
+    .submitButton button{
+        padding: 10px 45%;
+    }
 }

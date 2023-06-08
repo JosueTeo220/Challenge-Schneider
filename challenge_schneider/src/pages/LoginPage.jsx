@@ -2,7 +2,7 @@ import LoginContainer from "../components/LoginPageComponents/LoginContainer";
 
 export default function LoginPage({ showLabel, verifyLogin}){
     const appStyle = {
-        height: '100vw',
+        height: '100%',
     }
     const style = {
         position: 'absolute',
