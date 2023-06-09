@@ -1,9 +1,18 @@
 .main{
-    margin-left: 200px;
+    margin-left: 300px;
     text-align: center;
+}
+.containerBurgerMenu{
+    position: fixed;
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
 }
 
 @media screen and (max-width: 765px) {
+    .containerContent{
+        padding-top: 100px;
+    }
     .main{
         margin-left: 0;
     }

@@ -29,8 +29,12 @@ export default function MainContainer({children, verifyLogout}){
             ?
               <SideBar verifyLogout={verifyLogout} />
             :
+            <div className={styles.containerBurgerMenu}>
               <BurgerMenu verifyLogout={verifyLogout} />
+            </div>
+              
             }
+            <div className={styles.containerContent}></div>
             {children}
         </main>
     )
