@@ -2,6 +2,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React, { useState } from "react";
 import EcoConnectHomePage from "./pages/EcoConnectHomePage";
 import LoginPage from "./pages/LoginPage";
+import Sobre from "./pages/AboutPage";
+import MainContainer from "./components/MainContainer";
+
 function App() {
   const users = ["admin@teste.com", "vivi@teste.com", "josue@teste.com"];
   const passwords = ["1234", "lfeplay", "5678"];
@@ -17,7 +20,7 @@ function App() {
       ) {
         setUser(user);
         setLogin(true);
-        localStorage.setItem(login, JSON.stringify(login))
+        localStorage.setItem(login, JSON.stringify(login));
       }
     });
     if (!login) {
@@ -33,22 +36,47 @@ function App() {
     setLogin(false);
     setShowLabel(false);
   }
+
   return (
     <>
       <Router>
         {login ? (
           <Routes>
-            <Route path="/" element={<EcoConnectHomePage user={user} verifyLogout={verifyLogout} />}></Route>
-            <Route path="/sobre" element={<></>}></Route>
+            <Route
+              path="/"
+              element={
+                <MainContainer verifyLogout={verifyLogout}>
+                  <EcoConnectHomePage user={user.split('@')[0]} />
+                </MainContainer>
+              }
+            ></Route>
+            <Route
+              path="/sobre"
+              element={
+                <MainContainer verifyLogout={verifyLogout}>
+                  <Sobre />
+                </MainContainer>
+              }
+            ></Route>
             <Route path="/loja" element={<>ola mundo</>}></Route>
             <Route path="/dicas" element={<></>}></Route>
             <Route path="/social" element={<></>}></Route>
           </Routes>
         ) : (
-        <Routes>
-          <Route path="/" element={<LoginPage showLabel={showLabel} verifyLogin={verifyLogin}/>}></Route>
-          <Route path="/*" element={<LoginPage showLabel={showLabel} verifyLogin={verifyLogin}/>}></Route>
-        </Routes>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <LoginPage showLabel={showLabel} verifyLogin={verifyLogin} />
+              }
+            ></Route>
+            <Route
+              path="/*"
+              element={
+                <LoginPage showLabel={showLabel} verifyLogin={verifyLogin} />
+              }
+            ></Route>
+          </Routes>
         )}
       </Router>
     </>

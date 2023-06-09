@@ -4,8 +4,12 @@
     position: fixed;
     left: 0;
     height: 100%;
-    width: 150px;
+    width: 200px;
     background-color: #1FE079;
+}
+
+.sideBarContainer ul{
+    padding-left: 0;
 }
 
 .sideBarContainer li{

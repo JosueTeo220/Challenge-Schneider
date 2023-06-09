@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import LogoutButton from "./LogoutButton"
 import styles from './SideBar.module.css'
 
-export default function SideBar() {
+export default function SideBar({ verifyLogout }) {
   return (
     <section className={styles.sideBarContainer}>
       <ul>
@@ -9,7 +10,13 @@ export default function SideBar() {
           <Link to="/">Inicio</Link>
         </li>
         <li>
-          <Link to="/about">Sobre</Link>
+          <Link to="/sobre">Sobre</Link>
+        </li>
+        <li>
+          <Link to="/loja">Loja</Link>
+        </li>
+        <li>
+          <LogoutButton verifyLogout={verifyLogout} />
         </li>
       </ul>
     </section>
