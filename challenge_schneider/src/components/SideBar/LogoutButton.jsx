@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import profile from "../../assets/icons/person.svg";
 
 export default function LogoutButton({ verifyLogout }) {
   return (
