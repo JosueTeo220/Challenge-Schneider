@@ -11,17 +11,27 @@
 .passwordInput {
   margin-top: 20px;
 }
+.labelsForm{
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #1fe079;
+}
 .submitButton button {
-  margin-top: 20px;
+  margin-top: 50px;
   border: 1px solid #15a85a;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #1fe079;
   color: #fff;
-  padding: 10px 43%;
+  padding: 10px 45%;
+}
+.iconPersonForm {
+  position: absolute;
+  left: 71vw;
 }
 
 .submitButton button:hover {
-  background-color: #15a85a;
+  background-color: #229759;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .submitButton label {
@@ -30,14 +40,20 @@
   margin-left: 50px;
 }
 .form_container {
-  padding-right: 100px;
+  padding-right: 50%;
 }
 .IconPersonForm {
   position: "absolute";
   right: 60;
 }
-@media screen and (max-width: 900px) {
- 
+@media screen and (max-width: 1400px) {
+  .iconPersonForm {
+    position: absolute;
+    left: 79vw;
+  }
+  .form_container {
+    padding-right: 25%;
+  }
   .submitButton button {
     padding: 10px 41%;
   }
