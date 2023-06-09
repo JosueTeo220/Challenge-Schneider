@@ -1,4 +1,4 @@
-import { bubble as Menu } from "react-burger-menu";
+import { push as Menu } from "react-burger-menu";
 import "./BurgerMenu.css";
 import MenuLinks from "../MenuLinks";
 

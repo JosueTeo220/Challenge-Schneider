@@ -4,7 +4,7 @@
     position: fixed;
     left: 0;
     height: 100%;
-    width: 200px;
+    width: 300px;
     background-color: #1FE079;
 }
 
@@ -21,7 +21,7 @@
 .sideBarContainer a{
     text-decoration: none;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .sideBarContainer a:hover{
