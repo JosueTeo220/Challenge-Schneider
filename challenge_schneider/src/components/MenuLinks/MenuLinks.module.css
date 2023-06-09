@@ -1,0 +1,16 @@
+.iconPosition{
+    list-style: none;
+}
+
+.iconPosition a{
+    text-decoration: none;
+}
+
+.iconPosition a:hover{
+
+}
+
+.iconPosition svg{
+    position: absolute;
+    left: 34px;
+}
