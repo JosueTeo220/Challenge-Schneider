@@ -1,5 +1,6 @@
 .main{
     margin-left: 200px;
+    text-align: center;
 }
 
 @media screen and (max-width: 765px) {

@@ -4,6 +4,9 @@ import EcoConnectHomePage from "./pages/EcoConnectHomePage";
 import LoginPage from "./pages/LoginPage";
 import Sobre from "./pages/AboutPage";
 import MainContainer from "./components/MainContainer";
+import Store from "./pages/StorePage";
+import Tips from "./pages/TipsPage";
+import Social from "./pages/SustainablePage";
 
 function App() {
   const users = ["admin@teste.com", "vivi@teste.com", "josue@teste.com"];
@@ -41,27 +44,18 @@ function App() {
     <>
       <Router>
         {login ? (
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <MainContainer verifyLogout={verifyLogout}>
-                  <EcoConnectHomePage user={user.split('@')[0]} />
-                </MainContainer>
-              }
-            ></Route>
-            <Route
-              path="/sobre"
-              element={
-                <MainContainer verifyLogout={verifyLogout}>
-                  <Sobre />
-                </MainContainer>
-              }
-            ></Route>
-            <Route path="/loja" element={<>ola mundo</>}></Route>
-            <Route path="/dicas" element={<></>}></Route>
-            <Route path="/social" element={<></>}></Route>
-          </Routes>
+          <MainContainer verifyLogout={verifyLogout}>
+            <Routes>
+              <Route
+                path="/"
+                element={<EcoConnectHomePage user={user.split("@")[0]} />}
+              ></Route>
+              <Route path="/sobre" element={<Sobre />}></Route>
+              <Route path="/loja" element={<Store />}></Route>
+              <Route path="/dicas" element={<Tips />}></Route>
+              <Route path="/social" element={<Social />}></Route>
+            </Routes>
+          </MainContainer>
         ) : (
           <Routes>
             <Route
