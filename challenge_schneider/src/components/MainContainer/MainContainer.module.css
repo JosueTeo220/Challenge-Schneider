@@ -2,13 +2,18 @@
     margin-left: 300px;
     text-align: center;
 }
-.containerBurgerMenu{
+.containerBurgerMenu {
     position: fixed;
+    z-index: 99999;
     background-color: #fff;
     height: 100px;
     width: 100%;
-}
-
+  }
+  
+  .main.scrolled .containerBurgerMenu {
+    background-color: #ffffffe9; /* Substitua pelo estilo desejado para o background do burger menu quando rolado */
+    transition: background-color 1s ease-in-out;
+  }
 @media screen and (max-width: 765px) {
     .containerContent{
         padding-top: 100px;

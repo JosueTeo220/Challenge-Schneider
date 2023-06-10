@@ -1,4 +1,6 @@
+import ExplicacaoPontos from "../components/EcoConnectHomePageComponents/ExplicacaoPontos";
 import { HeaderTitle } from "../components/EcoConnectHomePageComponents/HeaderTitle";
+import { Ranking } from "../components/EcoConnectHomePageComponents/Ranking";
 
 function EcoConnectHomePage({ user }) {
 
@@ -7,6 +9,8 @@ function EcoConnectHomePage({ user }) {
   return (
     <div>
       <HeaderTitle userCapitalized={userCapitalized}/>
+      <ExplicacaoPontos/>
+      <Ranking/>
     </div>
   );
 }

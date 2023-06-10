@@ -10,6 +10,7 @@ font-family: 'Source Code Pro', monospace;
 */
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Open+Sans&family=Roboto:wght@500;700&family=Source+Code+Pro:wght@400;500;700&display=swap');
 *{
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -24,7 +25,7 @@ font-family: 'Source Code Pro', monospace;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Cor da barra de rolagem ao passar o mouse */
+  background-color: #72c896; /* Cor da barra de rolagem ao passar o mouse */
 }
 
 

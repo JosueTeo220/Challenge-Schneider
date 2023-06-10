@@ -1,15 +1,27 @@
-.iconPosition{
+.iconPosition {
     list-style: none;
-}
-
-.iconPosition a{
+  }
+  
+  .iconPosition a {
     text-decoration: none;
-}
-
-.iconPosition a:hover{
-    
-}
-
+    position: relative;
+  }
+  
+  .iconPosition a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s;
+  }
+  
+  .iconPosition a:hover::before {
+    width: 100%;
+  }
+  
 .iconPosition svg{
     position: absolute;
     left: 90px;

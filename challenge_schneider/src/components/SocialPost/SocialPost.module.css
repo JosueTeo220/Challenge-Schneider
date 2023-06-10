@@ -1,0 +1,37 @@
+.container{
+    color: #FFF;
+    border-radius: 20px;
+    background-color: #1FE079;
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 35px;
+    display: flex;
+    padding: 7px;
+}
+
+.profileContainer p{
+    margin: 0;
+}
+
+.iconContainer{
+    background-color: #FFF;
+    clip-path: circle();
+}
+
+.postContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.postContainer p{
+    text-align: left;
+}
+
+.postContainer img{
+    max-height: 250px;
+    max-width: 250px;
+}

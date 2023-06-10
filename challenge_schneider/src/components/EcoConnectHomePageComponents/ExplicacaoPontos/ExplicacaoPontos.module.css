@@ -1,0 +1,21 @@
+.headerExplicacao{
+    width: fit-content;
+    margin-top: 75px;
+    font-family: 'Inter', sans-serif;
+    border-bottom: 1px solid #72c896;
+}
+.textExplicacao p{
+    font-size: 19px;
+    margin-top: 30px;
+    font-family: 'Inter', Courier, monospace;
+}
+.textExplicacao p span a{
+    text-decoration: none;
+    color: #24c729;
+}
+.videoFrame {
+    margin-top: 20px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px #d9d9d9;
+  }
+  

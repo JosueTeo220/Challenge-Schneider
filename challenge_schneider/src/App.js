@@ -11,9 +11,10 @@ import Social from "./pages/SustainablePage";
 function App() {
   const users = ["admin@teste.com", "vivi@teste.com", "josue@teste.com"];
   const passwords = ["1234", "lfeplay", "5678"];
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(true); // voltar para False
   const [showLabel, setShowLabel] = useState(false);
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState("Admin");
+  const [userCapitalized, setUserCapitalized] = useState('Admin')
 
   function verifyLogin(loginData) {
     users.forEach((user, index) => {
@@ -22,6 +23,8 @@ function App() {
         passwords[index] === loginData.password
       ) {
         setUser(user);
+        const userParsed = user.split("@")[0]
+        setUserCapitalized(userParsed.charAt(0).toUpperCase() + userParsed.slice(1).toLowerCase())
         setLogin(true);
         localStorage.setItem(login, JSON.stringify(login));
       }
@@ -48,12 +51,12 @@ function App() {
             <Routes>
               <Route
                 path="/"
-                element={<EcoConnectHomePage user={user.split("@")[0]} />}
+                element={<EcoConnectHomePage user={userCapitalized} />}
               ></Route>
               <Route path="/sobre" element={<Sobre />}></Route>
               <Route path="/loja" element={<Store />}></Route>
               <Route path="/dicas" element={<Tips />}></Route>
-              <Route path="/social" element={<Social />}></Route>
+              <Route path="/social" element={<Social user={user.split("@")[0]} />}></Route>
             </Routes>
           </MainContainer>
         ) : (
