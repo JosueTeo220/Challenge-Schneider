@@ -9,7 +9,7 @@ import Tips from "./pages/TipsPage";
 import Social from "./pages/SustainablePage";
 
 function App() {
-  const users = ["admin@teste.com", "vivi@teste.com", "josue@teste.com"];
+  const users = ["colaborador@teste.com", "vivi@teste.com", "josue@teste.com"];
   const passwords = ["1234", "lfeplay", "5678"];
   const [login, setLogin] = useState(false); // voltar para False
   const [showLabel, setShowLabel] = useState(false);

@@ -59,7 +59,7 @@ export default function LoginForm({ showLabel, verifyLogin }) {
         </div>
         <div className={styles.submitButton}>
           <button type="submit">Iniciar</button>
-          {showLabel && <label>E-mail/senha inválidos</label>}
+          {showLabel && <label>E-mail/senha inválidos. Veja o manual do usuário</label>}
         </div>
       </form>
     </div>
