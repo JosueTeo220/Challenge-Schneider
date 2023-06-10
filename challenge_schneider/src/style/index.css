@@ -20,7 +20,7 @@ font-family: 'Source Code Pro', monospace;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #a5fcc9; /* Cor da barra de rolagem */
+  background-color: #3acf78; /* Cor da barra de rolagem */
   border-radius: 4px; /* Bordas arredondadas da barra de rolagem */
 }
 

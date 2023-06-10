@@ -59,7 +59,7 @@ export default function ExplicacaoPontos() {
                 comunidade. Ao clicar aqui, você será redirecionado para a
                 página{" "}
                 <span>
-                  <Link to="/social">"Social"</Link>
+                  <Link to="/social">"Eu Sustentável"</Link>
                 </span>
                 , onde poderá compartilhar suas iniciativas sustentáveis.
                 Conte-nos sobre as ações que você realiza no seu dia a dia para
@@ -109,10 +109,10 @@ export default function ExplicacaoPontos() {
           <div className="col-sm-6 p-5">
             <div className={styles.textExplicacao}>
               <p>
-              <span>
+                <span>
                   <Link to="/social">Mostre</Link>
-                </span> suas ações para outros colaboradores e ganhe pontos
-                !
+                </span>{" "}
+                suas ações para outros colaboradores e ganhe pontos !
               </p>
             </div>
           </div>
@@ -121,22 +121,22 @@ export default function ExplicacaoPontos() {
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className={styles.headerExplicacao}>
-            <h2>Veja mais sobre a plataforma!</h2>
+            <h2>Video Pitch</h2>
           </div>
-          <div>
-          <iframe
-            width="70%"
-            height="600px"
-            src="https://www.youtube.com/embed/Q92VFh2R1pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <div >
+            <iframe
+            className={styles.videoFrame}
+              width="70%"
+              height="600px"
+              src="https://www.youtube.com/embed/hb5WETI05os"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
-      
     </div>
   );
 }

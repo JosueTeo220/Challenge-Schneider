@@ -53,7 +53,7 @@ export default function MenuLinks({ verifyLogout }) {
           style={{ paddingLeft: "5px", marginBottom: "8px" }}
         />
         <Link to="/social">
-          Social
+          Eu Sustentável
         </Link>
       </li>
       <li className="bm-item">
@@ -64,7 +64,7 @@ export default function MenuLinks({ verifyLogout }) {
           style={{ paddingLeft: "5px", marginBottom: "8px" }}
         />
         <Link to="/sobre">
-          Sobre
+          Sobre o Projeto
         </Link>
       </li>
       <li>

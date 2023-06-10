@@ -10,7 +10,7 @@ export default function Social({ user }) {
       personName: "Admin",
       attachments: [],
       message:
-        "🌍🌱 Hoje, estou orgulhoso em compartilhar que minha empresa alcançou um marco importante em nossa jornada de sustentabilidade! Com dedicação e esforço contínuos, reduzimos nossas emissões de carbono em 50% nos últimos cinco anos. Estamos comprometidos em ser uma força positiva para o meio ambiente e continuaremos buscando soluções inovadoras para enfrentar os desafios climáticos. Juntos, podemos construir um futuro mais verde e sustentável! #ESG #Sustentabilidade #ResponsabilidadeAmbiental 🌿💚",
+        "🌎💡 Hoje, tive o prazer de participar de uma conferência sobre inovação sustentável. Foi inspirador ouvir palestrantes de renome compartilhando ideias e soluções para os desafios ambientais que enfrentamos. Saio deste evento cheio de motivação e novas perspectivas sobre como minha empresa pode impulsionar a transformação positiva. Vamos abraçar a inovação sustentável e trabalhar juntos para criar um mundo melhor para as gerações futuras! #ESG #InovaçãoSustentável #FuturoSustentável 🌿💡",
     },
     {
       personName: "Vivi",
@@ -42,7 +42,7 @@ export default function Social({ user }) {
   return (
     <div>
       <h1 style={{ marginBottom: "30px" }}>
-        Poste aqui suas ideias e ganhe Pontos!
+        Poste aqui suas ideias! Cada postagem vale 100 pontos!
       </h1>
       <ShareImage></ShareImage>
       <SocialPostPublish user={user} postPublished={handlePostPublished} />
