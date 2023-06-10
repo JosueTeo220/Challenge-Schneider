@@ -16,3 +16,7 @@ Para esse projeto deve ser efetuado o login com usuário e senha pre-definido, s
 - Email: <colaborador@teste.com> Senha: 1234
 - Email: <vivi@teste.com> Senha: lfeplay
 - Email: <josue@teste.com> Senha: 5678
+
+## Video Pitch
+
+Link: <https://youtu.be/hb5WETI05os>
