@@ -1,5 +1,8 @@
 export default function Sobre(){
     return (
-        <h1>Sobre</h1>
+        <div style={{paddingTop: '20px'}}>
+            <h1>Saiba quem fez parte desse projeto!</h1>
+            <></>
+        </div>
     )
 }

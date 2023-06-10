@@ -59,7 +59,7 @@ export default function ExplicacaoPontos() {
                 comunidade. Ao clicar aqui, você será redirecionado para a
                 página{" "}
                 <span>
-                  <Link to="/social">"Eu Sustentável"</Link>
+                  <Link to="/social">"Social"</Link>
                 </span>
                 , onde poderá compartilhar suas iniciativas sustentáveis.
                 Conte-nos sobre as ações que você realiza no seu dia a dia para
@@ -118,7 +118,24 @@ export default function ExplicacaoPontos() {
           </div>
         </div>
       </div>
-      
+      <div className="container-fluid">
+        <div className="row justify-content-center">
+          <div className={styles.headerExplicacao}>
+            <h2>Veja mais sobre a plataforma!</h2>
+          </div>
+          <div>
+          <iframe
+            width="70%"
+            height="600px"
+            src="https://www.youtube.com/embed/Q92VFh2R1pU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          </div>
+        </div>
+      </div>
       
     </div>
   );

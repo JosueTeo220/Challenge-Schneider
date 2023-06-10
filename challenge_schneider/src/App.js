@@ -11,7 +11,7 @@ import Social from "./pages/SustainablePage";
 function App() {
   const users = ["admin@teste.com", "vivi@teste.com", "josue@teste.com"];
   const passwords = ["1234", "lfeplay", "5678"];
-  const [login, setLogin] = useState(true); // voltar para False
+  const [login, setLogin] = useState(false); // voltar para False
   const [showLabel, setShowLabel] = useState(false);
   const [user, setUser] = useState("Admin");
   const [userCapitalized, setUserCapitalized] = useState('Admin')
