@@ -7,28 +7,46 @@ import { ReactComponent as ShareImage } from "../assets/img/Social Media_Flatlin
 export default function Social({ user }) {
   const defaultPosts = [
     {
-      personName: "Admin",
+      personName: "Luciana Dias, 15/09/2023",
       attachments: [],
       message:
-        "🌎💡 Hoje, tive o prazer de participar de uma conferência sobre inovação sustentável. Foi inspirador ouvir palestrantes de renome compartilhando ideias e soluções para os desafios ambientais que enfrentamos. Saio deste evento cheio de motivação e novas perspectivas sobre como minha empresa pode impulsionar a transformação positiva. Vamos abraçar a inovação sustentável e trabalhar juntos para criar um mundo melhor para as gerações futuras! #ESG #InovaçãoSustentável #FuturoSustentável 🌿💡",
+        "Nem acredito que consegui trocar meus pontos acumulados por um descontão de 50% no brechó parceiro da EcoConnect e comprei essa blusinha linda. Muito bom saber que reutilizarei uma roupa que poderia ter sido descartada e ainda ajudei o comércio local sustentável. Já quero usar amanhã!",
     },
     {
-      personName: "Vivi",
+      personName: "Claudio Bueno, 17/09/2023",
       attachments: [],
       message:
-        "🌎🤝 Hoje, tive o privilégio de participar de uma mesa-redonda sobre diversidade e inclusão no mundo corporativo. Foi incrível ver líderes de diferentes setores compartilhando suas experiências e discutindo maneiras de promover um ambiente de trabalho mais equitativo. Vamos continuar trabalhando juntos para criar oportunidades iguais para todos, independentemente de sua origem, gênero ou identidade. A diversidade é uma força e juntos podemos fazer a diferença! #ESG #Diversidade #Inclusão 🌈🙌",
+        "Pessoal, fiz o cadastro aqui anteontem para participar do programa de caronas. Minha rota é de Cajamar para o Sacomã. Caso aalguém tenha interesse nessa rota, formaliza o cadastro. Já vou levar o Luiz da Contabilidade, então ainda restam 03 vagas no carro.",
     },
     {
-      personName: "Josue",
+      personName: "Vinicius Nascimento, 18/09/2023",
       attachments: [],
       message:
-        "🌍👩‍🔬 Hoje, tive a oportunidade de visitar uma escola local para falar sobre educação ambiental e sustentabilidade. Foi incrível ver o entusiasmo das crianças enquanto aprendiam sobre a importância de cuidar do nosso planeta. Estou inspirado em fazer parte de uma empresa que valoriza a educação e está comprometida em criar um futuro mais sustentável para as gerações futuras. Juntos, podemos ensinar e aprender a proteger nosso lar, a Terra! #ESG #EducaçãoAmbiental #Sustentabilidade 🌿📚",
+        "Aprendi a fazer compostagem e quero compartilhar com vocês. Aí vai: \n-Escolha um local adequado.Adicione resíduos orgânicos (restos de comida, folhas, cascas de frutas, etc.).\n-Mantenha o composto úmido, mas não encharcado.\n-Aeração ocasional é importante (vire os materiais).\n-Aguarde vários meses até obter composto maduro.\n-Use o composto em seu jardim como fertilizante.\n-Eu montei uma horta no quintal de casa e fiz a compostagem desse jeitinho. \nFuncionou demais. Recomendo a todos! Vivi",
     },
     {
       personName: "Rodrigo",
       attachments: [],
       message:
-        "Ontem comprei duas peças de roupa no Brechó Legal, indicado aqui na loja da plataforma. Troquei alguns pontos acumulados por desconto e a compra saiu muito barata! Estou me sentindo feliz por ter economizado e ainda contribuído com a redução do consumo excessivo e o desperdício de recursos! Recomendo, pessoal"
+        "Ontem comprei duas peças de roupa no Brechó Legal, indicado aqui na loja da plataforma. Troquei alguns pontos acumulados por desconto e a compra saiu muito barata! Estou me sentindo feliz por ter economizado e ainda contribuído com a redução do consumo excessivo e o desperdício de recursos! Recomendo, pessoal",
+    },
+    {
+      personName: "Rodrigo",
+      attachments: [],
+      message:
+        "Ontem comprei duas peças de roupa no Brechó Legal, indicado aqui na loja da plataforma. Troquei alguns pontos acumulados por desconto e a compra saiu muito barata! Estou me sentindo feliz por ter economizado e ainda contribuído com a redução do consumo excessivo e o desperdício de recursos! Recomendo, pessoal",
+    },
+    {
+      personName: "Rodrigo",
+      attachments: [],
+      message:
+        "Ontem comprei duas peças de roupa no Brechó Legal, indicado aqui na loja da plataforma. Troquei alguns pontos acumulados por desconto e a compra saiu muito barata! Estou me sentindo feliz por ter economizado e ainda contribuído com a redução do consumo excessivo e o desperdício de recursos! Recomendo, pessoal",
+    },
+    {
+      personName: "Rodrigo",
+      attachments: [],
+      message:
+        "Ontem comprei duas peças de roupa no Brechó Legal, indicado aqui na loja da plataforma. Troquei alguns pontos acumulados por desconto e a compra saiu muito barata! Estou me sentindo feliz por ter economizado e ainda contribuído com a redução do consumo excessivo e o desperdício de recursos! Recomendo, pessoal",
     },
   ];
 
@@ -41,8 +59,8 @@ export default function Social({ user }) {
 
   return (
     <div>
-      <h1 style={{ marginBottom: "30px" }}>
-        Poste aqui suas ideias! Cada postagem vale 100 pontos!
+      <h1 style={{ marginBottom: "30px", paddingTop: "80px" }}>
+        Poste aqui suas ideias!<div></div>
       </h1>
       <ShareImage></ShareImage>
       <SocialPostPublish user={user} postPublished={handlePostPublished} />

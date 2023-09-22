@@ -12,11 +12,22 @@
 }
 .textExplicacao p span a{
     text-decoration: none;
-    color: #24c729;
+    border-bottom: 1px solid #72c896;
+    color: green;
 }
 .videoFrame {
+    height: 800px;
     margin-top: 20px;
     border-radius: 30px;
     box-shadow: 3px 3px 3px #d9d9d9;
   }
-  
+  @media screen and (max-width: 1500px) {
+    .videoFrame {
+        height: 600px;
+      }
+  }
+  @media screen and (max-width: 1000px) {
+    .videoFrame {
+        height: 450px;
+      }
+  }

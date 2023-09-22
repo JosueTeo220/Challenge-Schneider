@@ -5,6 +5,8 @@ import { ReactComponent as InfoIcon } from "../../assets/icons/info.svg";
 import { ReactComponent as StoreIcon } from "../../assets/icons/store.svg";
 import { ReactComponent as TipsIcon } from "../../assets/icons/tips.svg";
 import { ReactComponent as EcoIcon } from "../../assets/icons/eco.svg";
+import { ReactComponent as EventIcon } from "../../assets/icons/event.svg";
+import { ReactComponent as AvatarIcon } from "../../assets/icons/avatar-svgrepo-com.svg";
 
 import LogoutButton from "../SideBar/LogoutButton";
 import styles from './MenuLinks.module.css'
@@ -19,7 +21,7 @@ export default function MenuLinks({ verifyLogout }) {
           fill={"#fff"}
           style={{ paddingLeft: "5px", marginBottom: "8px" }}
         />
-        <Link to="/">
+        <Link to="/home">
           Inicio
         </Link>
       </li>
@@ -54,6 +56,28 @@ export default function MenuLinks({ verifyLogout }) {
         />
         <Link to="/social">
           Eu Sustentável
+        </Link>
+      </li>
+      <li className="bm-item">
+        <EventIcon
+          height={28}
+          width={28}
+          fill={"#fff"}
+          style={{ paddingLeft: "5px", marginBottom: "8px" }}
+        />
+        <Link to="/desafio-mes">
+          Desafio do Mês 
+        </Link>
+      </li>
+      <li className="bm-item">
+        <AvatarIcon
+          height={35}
+          width={35}
+          fill={"#fff"}
+          style={{marginBottom: "2px" }}
+        />
+        <Link to="/avatar">
+          Criação de Avatar 
         </Link>
       </li>
       <li className="bm-item">

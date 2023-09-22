@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as PersonIcon } from "../../assets/icons/person.svg";
 import styles from "./SocialPostPublish.module.css";
-import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Importe o CSS do React Toastify
 
 export default function SocialPostPublish({ user, postPublished }) {
   const [userText, setUserText] = useState("");
@@ -22,17 +23,24 @@ export default function SocialPostPublish({ user, postPublished }) {
       attachments: userAttach,
       message: userText,
     };
-    const postText = document.getElementById("postText");
-    const inputFile = document.getElementById("inputFile");
     postPublished(post);
-    postText.value = "";
-    inputFile.value = "";
+    setUserText(""); // Limpar o texto
+    setUserAttach([]); // Limpar os anexos
+
+    // Exibir o toast ao clicar no botão "Publicar"
+    toast.success("Parabéns, você ganhou 10 pontos!");
+
+    // Limpar o input de arquivo
+    const inputFile = document.getElementById("inputFile");
+    if (inputFile) {
+      inputFile.value = "";
+    }
   }
 
   return (
     <section className={styles.container}>
       <div className={styles.profileContainer}>
-        <p>{user}</p>
+        <p style={{ padding: "15px" }}>{user}</p>
         <div className={styles.iconContainer}>
           <PersonIcon />
         </div>
@@ -44,6 +52,7 @@ export default function SocialPostPublish({ user, postPublished }) {
             cols="83"
             placeholder="Escreva Algo"
             id="postText"
+            value={userText}
             onChange={handleUserText}
           />
         </div>
@@ -57,16 +66,17 @@ export default function SocialPostPublish({ user, postPublished }) {
               accept="image/*"
             />
             Anexar imagem
-            
           </label>
           <div className={styles.attachmentMessage}>
-              {userAttach.length > 0 && <p>Arquivo anexado</p>}
-            </div>
+            {userAttach.length > 0 && <p>Arquivo anexado</p>}
+          </div>
           <button className={styles.publishButton} onClick={handleButtonClick}>
             Publicar
           </button>
         </div>
       </div>
+      {/* Container para exibir os toasts */}
+      <ToastContainer autoClose={3000} /> {/* Feche automaticamente após 3 segundos */}
     </section>
   );
 }

@@ -1,0 +1,6 @@
+.row-with-border {
+  border: 1px solid black;
+}
+.gray-input {
+  background-color: gray;
+}

@@ -56,7 +56,10 @@ export function DicasItems() {
               <p>
                 Pratique a coleta seletiva em sua casa ou local de trabalho.
                 Separe corretamente os materiais recicláveis, como papel,
-                plástico, vidro e metal, do lixo orgânico. Essa ação contribui
+                plástico, vidro e metal, do lixo orgânico. 
+              </p>
+              <p>
+              Essa ação contribui
                 para a redução do volume de resíduos destinados a aterros
                 sanitários e promove a reciclagem. Você sabe identificar as
                 cores para cada tipo de material?
@@ -87,7 +90,10 @@ export function DicasItems() {
                 Você sabia que a produção de uma única calça jeans pode consumir
                 até 7.000 litros de água? Em vez de comprar peças novas,
                 explorar brechós, bazares ou plataformas online de venda de
-                roupas usadas é uma excelente ação. Essa prática reduz o consumo
+                roupas usadas é uma excelente ação. 
+              </p>
+              <p className="pt-5">
+              Essa prática reduz o consumo
                 excessivo, dá uma nova vida às peças e evita que mais recursos
                 sejam utilizados na produção de roupas novas. Além disso, ao
                 escolher roupas de segunda mão, você também pode descobrir peças
@@ -112,7 +118,7 @@ export function DicasItems() {
             <img
               src={Foguete}
               alt="Imagem Dicas"
-              className="img-fluid"
+              className="img-fluid w-50"
               style={{ borderRadius: "40px" }}
             />
           </div>
@@ -124,15 +130,16 @@ export function DicasItems() {
                 rolo de papel higiênico e dobre-o em formato de triângulo para
                 criar a ponta do foguete. Use papel para fazer o suporte da
                 base. Em seguida, recorte janelas e encaixe bonecos dentro para
-                uma emocionante viagem ao espaço. Dê asas à sua imaginação e
+                uma emocionante viagem ao espaço. 
+              </p>
+              <p>Dê asas à sua imaginação e
                 embarque nessa divertida aventura com as crianças, reutilizando
                 materiais do dia a dia para criar brinquedos sustentáveis. Além
                 de se divertir, você estará promovendo a conscientização sobre a
                 importância da reutilização e da criatividade na redução de
                 resíduos. Aproveite sua viagem espacial com os foguetes de rolos
                 de papel higiênico e não esqueça de postar aqui na plataforma os
-                registros de suas criações!
-              </p>
+                registros de suas criações!</p>
             </div>
           </div>
         </div>
@@ -149,8 +156,8 @@ export function DicasItems() {
             <img
               src={Carona}
               alt="Imagem Dicas"
-              className="img-fluid"
-              style={{ borderRadius: "40px" }}
+              className=" img-fluid w-50"
+              style={{ borderRadius: "40px", objectFit: "fill"}}
             />
           </div>
           <div className="col-sm-6 p-5">

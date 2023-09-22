@@ -2,13 +2,12 @@
     font-weight: 400;
     color: #000;
     font-family: 'Inter';
-    font-size: 32px;
+    font-size: 60px;
     line-height: 39px;
     text-align: center;
   }
-  
   .title span {
-    color: #1fe079;
+    color: green;
     font-weight: bold;
   }
   
@@ -26,10 +25,21 @@
       opacity: 1;
     }
   }
-  
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1500px) {
     .title {
-      font-size: px;
+      font-size: 40px;
     }
   }
+  @media screen and (max-width: 1200px) {
+    .title {
+      font-size: 32px;
+    }
+  }
+  @media screen and (max-width: 765px) {
+    .title {
+      font-size: 34px;
+    }
+  }
+  
+  
   

@@ -7,14 +7,17 @@ import MainContainer from "./components/MainContainer";
 import Store from "./pages/StorePage";
 import Tips from "./pages/TipsPage";
 import Social from "./pages/SustainablePage";
+import PersonForm from "./pages/PersonForm";
+import DesafioDoMes from "./pages/DesafioDoMesPage";
+import AvatarPage from "./pages/AvatarPage";
 
 function App() {
-  const users = ["colaborador@teste.com", "vivi@teste.com", "josue@teste.com"];
+  const users = ["colaborador@schneider.com", "vivi@teste.com", "josue@teste.com"];
   const passwords = ["1234", "lfeplay", "5678"];
   const [login, setLogin] = useState(false); // voltar para False
   const [showLabel, setShowLabel] = useState(false);
   const [user, setUser] = useState("Admin");
-  const [userCapitalized, setUserCapitalized] = useState('Admin')
+  const [userCapitalized, setUserCapitalized] = useState("Admin");
 
   function verifyLogin(loginData) {
     users.forEach((user, index) => {
@@ -23,8 +26,10 @@ function App() {
         passwords[index] === loginData.password
       ) {
         setUser(user);
-        const userParsed = user.split("@")[0]
-        setUserCapitalized(userParsed.charAt(0).toUpperCase() + userParsed.slice(1).toLowerCase())
+        const userParsed = user.split("@")[0];
+        setUserCapitalized(
+          userParsed.charAt(0).toUpperCase() + userParsed.slice(1).toLowerCase()
+        );
         setLogin(true);
         localStorage.setItem(login, JSON.stringify(login));
       }
@@ -49,14 +54,20 @@ function App() {
         {login ? (
           <MainContainer verifyLogout={verifyLogout}>
             <Routes>
+              <Route path="/" element={<PersonForm/>}></Route>
               <Route
-                path="/"
+                path="/home"
                 element={<EcoConnectHomePage user={userCapitalized} />}
               ></Route>
               <Route path="/sobre" element={<Sobre />}></Route>
               <Route path="/loja" element={<Store />}></Route>
+              <Route path="/desafio-mes" element={<DesafioDoMes/>}></Route>
+              <Route path="/avatar" element={<AvatarPage/>}></Route>
               <Route path="/dicas" element={<Tips />}></Route>
-              <Route path="/social" element={<Social user={user.split("@")[0]} />}></Route>
+              <Route
+                path="/social"
+                element={<Social user={user.split("@")[0]} />}
+              ></Route>
             </Routes>
           </MainContainer>
         ) : (

@@ -1,0 +1,20 @@
+/* Defina essas classes personalizadas no seu arquivo de estilos */
+.customCitation {
+    border-left: 4px solid green; /* Borda esquerda verde */
+    padding-left: 20px; /* Espaçamento à esquerda para a borda */
+    font-size: 28px; /* Tamanho da fonte */
+  }
+  
+  .textGreen {
+    color: green; /* Cor do texto verde */
+  }
+  
+  .italicText {
+    
+    font-style: italic; /* Texto em itálico */
+  }
+  .blockquoteFooter{
+    font-size: 20px; 
+    color: gray;
+    font-style: italic;
+  }

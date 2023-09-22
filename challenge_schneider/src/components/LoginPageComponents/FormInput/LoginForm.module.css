@@ -14,13 +14,13 @@
 .labelsForm{
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
-  color: #1fe079;
+  color: green;
 }
 .submitButton button {
   margin-top: 50px;
-  border: 1px solid #15a85a;
-  border-radius: 15px;
-  background-color: #1fe079;
+  border: 1px solid green;
+  border-radius: 10px;
+  background-color: rgb(14, 139, 14);
   color: #fff;
   padding: 10px 45%;
 }

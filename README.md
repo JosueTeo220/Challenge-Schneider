@@ -13,7 +13,7 @@ Inicie no terminal `npm start` para iniciar o projeto
 
 Para esse projeto deve ser efetuado o login com usuário e senha pre-definido, sendo eles:
 
-- Email: <colaborador@teste.com> Senha: 1234
+- Email: <colaborador@schneider.com> Senha: 1234
 - Email: <vivi@teste.com> Senha: lfeplay
 - Email: <josue@teste.com> Senha: 5678
 
